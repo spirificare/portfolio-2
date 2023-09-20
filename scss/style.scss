@@ -44,23 +44,20 @@ body {
 /* ================================= */
 
 .header {
-   &__body {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 60px;
-      position: relative;
-      height: 100px;
-      @media (max-width: 1340px) {
-         height: 70px;
-      }
-      @media (max-width: 767px) {
-         height: 50px;
-      }
-   }
    position: fixed;
    width: 100%;
    z-index: 3;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 16px 60px;
+   height: 100px;
+   @media (max-width: 1340px) {
+      height: 70px;
+   }
+   @media (max-width: 767px) {
+      height: 50px;
+   }
    &::before {
       content: '';
       position: absolute;
@@ -274,7 +271,7 @@ body {
          row-gap: 40px;
       }
       .footer__logo {
-         .logo__span--big {
+         .logo__text--big {
             @media (max-width: 340px) {
                font-size: 2rem;
             }   
@@ -464,7 +461,7 @@ body {
       }
       .list-contacts {
          max-width: 500px;
-         &__item {
+         &__link {
             display: flex;
             gap: 26px;
             align-items: center;
@@ -498,7 +495,7 @@ body {
                }
             }
          }
-         &__item:not(:last-child) {
+         &__link:not(:last-child) {
             margin-bottom: 30px;
          }
       }
@@ -542,12 +539,20 @@ body {
             display: flex;
             column-gap: 15px;
             align-items: center;
-            .form-registr__field::placeholder {
-               color: #141414;
+            position: relative;
+            .form-registr__field {
+               color: #1E2C30;
                font-family: 'DM Sans', sans-serif;
                font-size: 1.2rem;
                line-height: 1.9rem;
                letter-spacing: -0.02rem;
+            }
+            .form-registr__field::placeholder {
+               color: #141414;
+            }
+            select {
+               width: 100%;
+               background-color: #FFF;
             }
             .textarea__icon {
                align-self: flex-start;

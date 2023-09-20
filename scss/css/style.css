@@ -48,8 +48,6 @@ body {
   position: fixed;
   width: 100%;
   z-index: 3;
-}
-.header__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,16 +58,15 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 16px 60px;
-  position: relative;
   height: 100px;
 }
 @media (max-width: 1340px) {
-  .header__body {
+  .header {
     height: 70px;
   }
 }
 @media (max-width: 767px) {
-  .header__body {
+  .header {
     height: 50px;
   }
 }
@@ -363,7 +360,7 @@ body {
   }
 }
 @media (max-width: 340px) {
-  .footer__main .footer__top .footer__logo .logo__span--big {
+  .footer__main .footer__top .footer__logo .logo__text--big {
     font-size: 2rem;
   }
 }
@@ -579,7 +576,7 @@ hr {
 .contacts__container .descr-contacts .list-contacts {
   max-width: 500px;
 }
-.contacts__container .descr-contacts .list-contacts__item {
+.contacts__container .descr-contacts .list-contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,13 +585,13 @@ hr {
       -ms-flex-align: center;
           align-items: center;
 }
-.contacts__container .descr-contacts .list-contacts__item:hover .list-contacts__icon {
+.contacts__container .descr-contacts .list-contacts__link:hover .list-contacts__icon {
   background-color: #EDF5F7;
 }
-.contacts__container .descr-contacts .list-contacts__item:hover .list-contacts__text {
+.contacts__container .descr-contacts .list-contacts__link:hover .list-contacts__text {
   text-decoration: underline;
 }
-.contacts__container .descr-contacts .list-contacts__item .list-contacts__descr {
+.contacts__container .descr-contacts .list-contacts__link .list-contacts__descr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,7 +601,7 @@ hr {
           flex-direction: column;
   gap: 8px;
 }
-.contacts__container .descr-contacts .list-contacts__item .list-contacts__descr .list-contacts__text {
+.contacts__container .descr-contacts .list-contacts__link .list-contacts__descr .list-contacts__text {
   color: #141414;
   font-family: "Manrope", sans-serif;
   font-size: 1rem;
@@ -613,14 +610,14 @@ hr {
   letter-spacing: 0.06rem;
   text-transform: uppercase;
 }
-.contacts__container .descr-contacts .list-contacts__item .list-contacts__descr .list-contacts__title {
+.contacts__container .descr-contacts .list-contacts__link .list-contacts__descr .list-contacts__title {
   color: #141414;
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2rem;
 }
-.contacts__container .descr-contacts .list-contacts__item:not(:last-child) {
+.contacts__container .descr-contacts .list-contacts__link:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -688,41 +685,33 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+.registration__container .form-registr__wrapper .form-registr__field {
+  color: #1E2C30;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.02rem;
 }
 .registration__container .form-registr__wrapper .form-registr__field::-webkit-input-placeholder {
   color: #141414;
-  font-family: "DM Sans", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.9rem;
-  letter-spacing: -0.02rem;
 }
 .registration__container .form-registr__wrapper .form-registr__field::-moz-placeholder {
   color: #141414;
-  font-family: "DM Sans", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.9rem;
-  letter-spacing: -0.02rem;
 }
 .registration__container .form-registr__wrapper .form-registr__field:-ms-input-placeholder {
   color: #141414;
-  font-family: "DM Sans", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.9rem;
-  letter-spacing: -0.02rem;
 }
 .registration__container .form-registr__wrapper .form-registr__field::-ms-input-placeholder {
   color: #141414;
-  font-family: "DM Sans", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.9rem;
-  letter-spacing: -0.02rem;
 }
 .registration__container .form-registr__wrapper .form-registr__field::placeholder {
   color: #141414;
-  font-family: "DM Sans", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.9rem;
-  letter-spacing: -0.02rem;
+}
+.registration__container .form-registr__wrapper select {
+  width: 100%;
+  background-color: #FFF;
 }
 .registration__container .form-registr__wrapper .textarea__icon {
   -ms-flex-item-align: start;

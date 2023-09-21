@@ -11,7 +11,7 @@
 
 body {
    font-family: 'Manrope', sans-serif;
-   font-size: 1.06rem;
+   font-size: 17px;
    color: #141414;
    &._lock {
       @media (max-width: 1340px) {
@@ -202,14 +202,13 @@ body {
       .social-media--black {
          @media (max-width: 1340px){
             gap: 25px;
-         
          }
       }
       .header__button {
          display: flex;
          gap: 12px;
          &::before {
-         content: url(../../images/reservation.svg);
+            content: url(../../images/reservation.svg);
          }
          @media (max-width: 1340px) {
             display: none;
@@ -281,7 +280,6 @@ body {
          background-color: #5C8692;
       }
    }
-}
    hr {
       opacity: 0.15;
       border-bottom: #FFF solid 1px;
@@ -379,6 +377,7 @@ body {
          }
       } 
    }
+}
 
 .footer__copyright {
    padding: 20px 15px;
@@ -455,7 +454,6 @@ body {
          }
          @media (max-width: 350px) {
             max-width: 100%;
-            margin-bottom: 100%;
             margin-bottom: 20px;
          }
       }

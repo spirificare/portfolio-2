@@ -600,7 +600,6 @@ body {
 }
 .contacts__container .descr-contacts .list-contacts__link .list-contacts__descr .list-contacts__text {
   color: #141414;
-  font-family: "Manrope", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.25rem;
@@ -690,6 +689,8 @@ body {
   font-size: 1.2rem;
   line-height: 1.9rem;
   letter-spacing: -0.02rem;
+  width: 100%;
+  background-color: #FFF;
 }
 .registration__container .form-registr__wrapper .form-registr__field::-webkit-input-placeholder {
   color: #141414;
@@ -705,10 +706,6 @@ body {
 }
 .registration__container .form-registr__wrapper .form-registr__field::placeholder {
   color: #141414;
-}
-.registration__container .form-registr__wrapper select {
-  width: 100%;
-  background-color: #FFF;
 }
 .registration__container .form-registr__wrapper .textarea__icon {
   -ms-flex-item-align: start;

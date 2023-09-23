@@ -477,7 +477,6 @@ body {
                gap: 8px;
                .list-contacts__text {
                   color: #141414;
-                  font-family: 'Manrope', sans-serif;
                   font-size: 1rem;
                   font-weight: 600;
                   line-height: 1.25rem;
@@ -544,13 +543,11 @@ body {
                font-size: 1.2rem;
                line-height: 1.9rem;
                letter-spacing: -0.02rem;
+               width: 100%;
+               background-color: #FFF;
             }
             .form-registr__field::placeholder {
                color: #141414;
-            }
-            select {
-               width: 100%;
-               background-color: #FFF;
             }
             .textarea__icon {
                align-self: flex-start;
